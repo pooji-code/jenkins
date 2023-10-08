@@ -3,7 +3,6 @@ pipeline {
 
     environment {
         // Define environment variables as needed
-        DOCKERFILE_PATH = './Dockerfile'  // Path to your Dockerfile
         DOCKER_IMAGE_NAME = 'poojiofc/docker-image'
         DOCKER_IMAGE_TAG = 'latest'
     }
@@ -20,7 +19,7 @@ pipeline {
             steps {
                 // Build the Docker image using the Dockerfile
                 script {
-                    def dockerImage = docker.build("${env.DOCKER_pooji-ofc/docker-image}:${env.DOCKER_IMAGE_TAG}", "--file ${env.DOCKERFILE_PATH} .")
+                    def dockerImage = docker.build("${env.DOCKER_poojiofc/docker-image})
                     dockerImage.push()
                 }
             }
