@@ -20,7 +20,7 @@ pipeline {
             steps {
                 // Build the Docker image using the Dockerfile
                 script {
-                    def dockerImage = docker.build("${env.DOCKER_IMAGE_NAME}:${env.DOCKER_IMAGE_TAG}", "--file ${env.DOCKERFILE_PATH} .")
+                    def dockerImage = docker.build("${env.DOCKER_pooji-ofc/docker-image}:${env.DOCKER_IMAGE_TAG}", "--file ${env.DOCKERFILE_PATH} .")
                     dockerImage.push()
                 }
             }
