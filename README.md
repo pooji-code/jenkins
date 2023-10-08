@@ -4,7 +4,7 @@ pipeline {
     environment {
         // Define environment variables as needed
         DOCKERFILE_PATH = './Dockerfile'  // Path to your Dockerfile
-        DOCKER_IMAGE_NAME = 'my-docker-image'
+        DOCKER_IMAGE_NAME = 'poojiofc/'
         DOCKER_IMAGE_TAG = 'latest'
     }
 
